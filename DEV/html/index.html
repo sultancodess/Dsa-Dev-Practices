@@ -1,147 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Sultan Alam — Links</title>
-
-<!-- LinkedIn / social preview -->
-<meta property="og:title" content="Sultan Alam — Links & Projects" />
-<meta property="og:description" content="CS undergrad • Web Dev — GitHub, LeetCode, Medium, projects & contact" />
-<meta property="og:image" content="https://yourdomain.com/path/to/preview-image.png" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Links and projects — Sultan Alam. GitHub, LeetCode, Medium, portfolio." />
-
-<style>
-  :root{
-    --bg:#0f1724;
-    --card:#0b1220;
-    --accent:#0ea5ff;
-    --muted:#9aa7bf;
-    --glass: rgba(255,255,255,0.03);
-    --radius:14px;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background:linear-gradient(180deg,#081226 0%, #0b1320 100%);
-    color:#e6eef8;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    min-height:100vh;
-    padding:24px;
-  }
-
-  .wrap{
-    width:100%;
-    max-width:720px;
-    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border-radius:calc(var(--radius) + 4px);
-    padding:28px;
-    box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-    backdrop-filter: blur(6px);
-  }
-
-  .head{
-    display:flex;
-    gap:16px;
-    align-items:center;
-    margin-bottom:18px;
-  }
-  .avatar{
-    width:78px;height:78px;border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,0.06);
-    flex:0 0 78px;
-  }
-  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-  .title{flex:1}
-  .name{font-size:20px;font-weight:700;margin:0 0 4px}
-  .role{margin:0;color:var(--muted);font-size:13px}
-
-  .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:8px 0 18px}
-  .btn{
-    display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;
-    text-decoration:none;color:inherit;background:var(--card);border:1px solid rgba(255,255,255,0.03);
-    transition:transform .12s ease, box-shadow .12s ease;
-  }
-  .btn:hover{transform:translateY(-4px);box-shadow: 0 8px 24px rgba(3,6,23,0.6)}
-  .btn .icon{width:36px;height:36px;flex:0 0 36px;border-radius:8px;background:var(--glass);display:flex;align-items:center;justify-content:center}
-  .btn .meta{flex:1;text-align:left}
-  .btn .label{font-weight:600;font-size:15px;margin:0}
-  .btn .sub{font-size:12px;color:var(--muted);margin-top:4px}
-
-  .projects{margin-top:10px;display:grid;gap:10px}
-  .project{
-    padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);
-    border:1px solid rgba(255,255,255,0.02);
-  }
-  .project h4{margin:0 0 6px;font-size:15px}
-  .project p{margin:0;color:var(--muted);font-size:13px}
-
-  .footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
-  .small {font-size:12px;color:var(--muted)}
-
-  @media (max-width:480px){
-    .head{flex-direction:row}
-    .links{grid-template-columns:1fr}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>practrce</title>
 </head>
 <body>
-  <main class="wrap">
-    <header class="head">
-      <div class="avatar">
-        <img src="https://yourdomain.com/path/to/avatar.jpg" alt="Sultan Alam">
-      </div>
-      <div class="title">
-        <p class="name">Sultan Alam</p>
-        <p class="role">CS Undergrad • Web Developer • Open-source</p>
-        <p class="small">Based in India • Open to internships & collaborations</p>
-      </div>
-    </header>
-
-    <!-- Links -->
-    <section class="links">
-      <a class="btn" href="https://linkedin.com/in/YOURPROFILE" target="_blank" rel="noopener noreferrer">
-        <span class="icon">🔗</span>
-        <div class="meta"><div class="label">LinkedIn</div><div class="sub">Connect / Resume</div></div>
-      </a>
-
-      <a class="btn" href="https://github.com/YOURHANDLE" target="_blank" rel="noopener noreferrer">
-        <span class="icon">🐙</span>
-        <div class="meta"><div class="label">GitHub</div><div class="sub">Repos & contributions</div></div>
-      </a>
-
-      <a class="btn" href="https://leetcode.com/YOURHANDLE" target="_blank" rel="noopener noreferrer">
-        <span class="icon">🧠</span>
-        <div class="meta"><div class="label">LeetCode</div><div class="sub">Problems & contests</div></div>
-      </a>
-
-      <a class="btn" href="https://medium.com/@YOURHANDLE" target="_blank" rel="noopener noreferrer">
-        <span class="icon">✍️</span>
-        <div class="meta"><div class="label">Medium</div><div class="sub">Articles & notes</div></div>
-      </a>
-    </section>
-
-    <!-- Projects -->
-    <section class="projects">
-      <div class="project">
-        <h4>InterviewMate — AI mock interviews</h4>
-        <p>Voice-based AI interviewer that gives feedback, scorecards, and improvement tips. Stack: React, Node, WebRTC. <a href="https://github.com/YOURHANDLE/interviewmate" target="_blank" style="color:var(--accent)">View repo</a></p>
-      </div>
-
-      <div class="project">
-        <h4>SaaS Shopping Concierge</h4>
-        <p>AI assistant that finds & buys items based on user preferences. Link: <a href="https://yourproject.example" target="_blank" style="color:var(--accent)">Demo</a></p>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div class="small">Email: <a href="mailto:youremail@example.com" style="color:var(--accent)">youremail@example.com</a> • <span style="color:var(--muted)">Made with ❤️</span></div>
-    </div>
-  </main>
+  <h1>
+    Image
+  </h1>
+  <img src="bro.jpg" alt="">
+  <img src="../images/bro.jpg" alt="">
 </body>
 </html>
