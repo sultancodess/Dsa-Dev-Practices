@@ -16,7 +16,8 @@ int main()
     sum()
     {
         int sum=a+b;
-    }
+    }git config --global user.email "sultancodess@gmail.com"
+  git config --global user.name "sultan alam"
     ADD();
     sum();
 
