@@ -1,24 +1,26 @@
-#include<iostream>
-using namesapace std;
+#include <iostream>
+using namespace std;
+
+// Function to input two numbers
+void ADD(int &a, int &b)
+{
+    cout << "Enter first number: ";
+    cin >> a;
+    cout << "Enter second number: ";
+    cin >> b;
+}
+
+// Function to calculate and display sum
+void SUM(int a, int b)
+{
+    int sum = a + b;
+    cout << "The sum is: " << sum << endl;
+}
+
 int main()
 {
-    int a;
-    int b;
-   ADD()
-    {
-        cout<<"enter a number for cal!"
-        cin>>a;
-        cout<<"enter a number for cal!"
-        cin>>b;
-        
-    }
-
-    sum()
-    {
-        int sum=a+b;
-    }git config --global user.email "sultancodess@gmail.com"
-  git config --global user.name "sultan alam"
-    ADD();
-    sum();
-
+    int a, b;
+    ADD(a, b);
+    SUM(a, b);
+    return 0;
 }
