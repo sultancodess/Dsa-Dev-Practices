@@ -1,7 +1,11 @@
-#include <iostream>     // Header file (for input/output)
-using namespace std;    // To avoid writing std::cout, std::cin repeatedly
+#include <iostream>     
+using namespace std;    
+int main() {            
+    
+     int arr =[10]=
+     for (num = 0 ;num <=80;num++){
+        cout<<"sultan alam\n";
+     }
 
-int main() {            // Main function – program execution starts here
-    cout << "Hello, World!";
-    return 0;           // Exit code 0 = successful run
+    return 0;           
 }
