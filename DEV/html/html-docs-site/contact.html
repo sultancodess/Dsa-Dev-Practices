@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – HTML Documentation</title>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="guide.html">Guide</a>
+    <a href="reference.html">Reference</a>
+    <a href="examples.html">Examples</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Contact Form</h1>
+
+  <form action="#" method="POST">
+
+    <fieldset>
+      <legend>User Details</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="1" max="120">
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label>Choose a topic:</label>
+      <select>
+        <optgroup label="Frontend">
+          <option>HTML</option>
+          <option>CSS</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option>Node.js</option>
+        </optgroup>
+      </select>
+
+      <label for="browser">Preferred Browser:</label>
+      <input list="browsers" id="browser">
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+      </datalist>
+
+      <label for="file">Upload a file:</label>
+      <input type="file" id="file">
+    </fieldset>
+
+    <label for="msg">Message:</label>
+    <textarea id="msg" rows="5"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</main>
+
+<footer>© 2025 Developer Docs Project</footer>
+
+</body>
+</html>
