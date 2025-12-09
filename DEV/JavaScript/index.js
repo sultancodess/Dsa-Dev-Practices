@@ -1,3 +1,1 @@
-(function () {
-  console.log("IIFE executed!");
-})();
+console.log("hello world");
